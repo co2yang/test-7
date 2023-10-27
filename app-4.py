@@ -11,3 +11,5 @@ st.write("""
 ## This is a sub-header
 Here's some **bold** text and *italic* text.
 """)
+
+st.write("<h2>HTML Header</h2>", unsafe_allow_html=True)
