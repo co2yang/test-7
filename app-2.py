@@ -3,6 +3,8 @@ import firebase_admin
 from firebase_admin import credentials, db
 import json
 
+
+
 # 讀取憑證
 try:
     # 嘗試載入權證，假如是在本地運行則會讀取到
@@ -20,13 +22,6 @@ if not firebase_admin._apps:
         'databaseURL': 'https://myproject01-be1b7-default-rtdb.asia-southeast1.firebasedatabase.app/'
     })
 
-# 初始化 Firebase Admin SDK
-if not firebase_admin._apps:
-    #
-    cred = credentials.Certificate(FIREBASE_CONFIG_STR)
-    firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://myproject01-be1b7-default-rtdb.asia-southeast1.firebasedatabase.app/'
-    })
 
 
 # 寫入
