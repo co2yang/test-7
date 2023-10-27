@@ -5,3 +5,9 @@ df = pd.DataFrame({
   'col2': ['A', 'B', 'C']
 })
 st.write(df)
+
+st.write("""
+# This is a header
+## This is a sub-header
+Here's some **bold** text and *italic* text.
+""")
