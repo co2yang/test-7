@@ -1,6 +1,5 @@
-import pandas as pd
-df = pd.DataFrame({
-  'col1': [1, 2, 3],
-  'col2': ['A', 'B', 'C']
-})
-st.write(df)
+import streamlit as st
+# To make things easier later, we're also importing numpy and pandas for
+# working with sample data.
+import numpy
+import pandas
